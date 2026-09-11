@@ -14,11 +14,12 @@
 }
 
 .bi {
-    font-size: 1.5vw;
+    font-size: 1.5vmax;
+    color: white;
 }
 
 h1.header {
-    font-size: 4vw;
+    font-size: 4vmax;
 }
 
 h2.header {
