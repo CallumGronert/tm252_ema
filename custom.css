@@ -1,0 +1,43 @@
+.header {
+    background-color: #3c9fc3;
+    color: white;
+}
+
+.img-fluid {
+    max-height: 250px;
+    width: auto;
+}
+
+.button-click {
+    background-color: darkblue;
+    color: white;
+}
+
+.bi {
+    font-size: 1.5vw;
+}
+
+h1.header {
+    font-size: 4vw;
+}
+
+h2.header {
+    font-size: 2vw;
+}
+
+form.register {
+    border: 1px solid #3c9fc3;
+    background-color: lightgrey;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+main {
+  flex: 1; 
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
