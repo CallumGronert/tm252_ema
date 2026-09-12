@@ -26,13 +26,40 @@ h2.header {
     font-size: 2vw;
 }
 
-form.register {
-    border: 1px solid #3c9fc3;
-    background-color: lightgrey;
-    border-radius: 15px;
-    padding: 15px;
+.form-group {
+    margin-bottom: 10px;
 }
 
+.form-input {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+
+.picker {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 1vmax;
+    
+}
+
+.dropdown-list {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 1vmax;
+}
+
+.attachment {
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 1vmax;
+}
+
+/* hook footer to bottom of page */
 main {
   flex: 1; 
 }
