@@ -90,53 +90,59 @@
             <!-- Row 4 -->
             <div class="row">
                 <div class="container col">
-                    <!--Content form entry-->
-                    <div class="form-group">
-                        <label for="content"><b>Content</b></label><br>
-                        <textarea id="content" class="form-input" name="content" placeholder="type here..." rows="5" cols="40" ></textarea>
-                    </div>
-                    <!--Subject Line form entry-->
-                    <div class="form-group">
-                        <label for="subjectLine"><b>Subject Line</b></label><br>
-                        <input id="subjectLine" class="form-input" type="text" name="subjectLine" placeholder="type here...">
-                    </div>
-                    <!--Sender's Name form entry-->
-                    <div class="form-group">
-                        <label for="senderName"><b>Sender's Name</b></label><br>
-                        <input id="senderName" class="form-input" type="text" name="senderName" placeholder="type here...">
-                    </div>
-                    <!--Sender's Role form entry-->
-                    <div class="form-group">
-                        <label for="senderRole"><b>Sender's Role</b></label><br>
-                        <input id="senderRole" class="form-input" type="text" name="senderRole" placeholder="type here...">
-                    </div>
-                    <!--Attachment form entry-->
-                    <div class="form-group">
-                        <Label for="attachment"><b>Attachment (optional)</b></Label><br>
-                        <p>Click on "Choose File" to upload a file</p>
-                        <input id="myFile" class="attachment" type="file" name="filename">
-                        <input type="submit" value="Upload file">
-                    </div>
-                    <!--Date and Time-->
-                    <div class="form-group">
-                        <label for="Date Time"><b>Date and Time to send email</b></label><br>
-                        <input id="date" class="picker" type="date" name="date">
-                        <input id="time" class="picker" type="time" name="time">
-                    </div>
-                    <!--Priority form option-->
-                    <div class="form-group">
-                        <label for="priority"><b>Announcement Priority</b></label><br>
-                        <select id="priority" class="dropdown-list" name="priority">
-                            <option value="" disabled selected>Select Priority</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                    </div>
-                    <!--Send Announcement-->
-                    <div class="form-group">
-                        <input id="submit" class="submit" type="submit" value="Send Email">
-                    </div>     
+                    <!--Form wrapper -->
+                    <form action="https://students.open.ac.uk/ mct/ tm252/ reflect/ reflect.php" method="post">
+                        <!--Content form entry-->
+                        <div class="form-group">
+                            <label for="content"><b>Content</b></label><br>
+                            <textarea id="content" class="form-input" name="content" placeholder="type here..." rows="5" cols="40" ></textarea>
+                        </div>
+                        <!--Subject Line form entry-->
+                        <div class="form-group">
+                            <label for="subjectLine"><b>Subject Line</b></label><br>
+                            <input id="subjectLine" class="form-input" type="text" name="subjectLine" value="EMA Meeting" placeholder="type here...">
+                        </div>
+                        <!--Sender's Name form entry-->
+                        <div class="form-group">
+                            <label for="senderName"><b>Sender's Name</b></label><br>
+                            <input id="senderName" class="form-input" type="text" name="senderName" value="Richard Johnson" placeholder="type here...">
+                        </div>
+                        <!--Sender's Role form entry-->
+                        <div class="form-group">
+                            <label for="senderRole"><b>Sender's Role</b></label><br>
+                            <input id="senderRole" class="form-input" type="text" name="senderRole" value="Lecturer" placeholder="type here...">
+                        </div>
+                        <!--Attachment form entry-->
+                        <div class="form-group">
+                            <Label for="attachment"><b>Attachment (optional)</b></Label><br>
+                            <p>Click on "Choose File" to upload a file</p>
+                            <input id="myFile" class="attachment" type="file" name="filename">
+                            <input type="submit" value="Upload file">
+                        </div>
+                        <!--Date and Time-->
+                        <div class="form-group">
+                            <label for="Date Time"><b>Date and Time to send email</b></label><br>
+                            <input id="date" class="picker" type="date" name="date">
+                            <input id="time" class="picker" type="time" name="time">
+                        </div>
+                        <!--Priority form option-->
+                        <div class="form-group">
+                            <label for="priority"><b>Announcement Priority</b></label><br>
+                            <select id="priority" class="dropdown-list" name="priority">
+                                <option value="" disabled selected>Select Priority</option>
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" id="custId" name="item_ID" value="30001000-5000-654321fedcba">
+                        </div>
+                        <!--Send Announcement-->
+                        <div class="form-group">
+                            <input id="submit" class="submit" type="submit" value="Send Email">
+                        </div> 
+                    </form>    
                 </div>
             </div>
         </main>
